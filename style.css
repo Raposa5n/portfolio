@@ -247,3 +247,38 @@ footer{
 
 /* Anchor offset for sticky nav */
 .anchor{scroll-margin-top: 80px;}
+
+/* ===== View more link ===== */
+.more-link{
+  font-size:13px;
+  color: var(--muted);
+  padding:6px 10px;
+  border-radius:999px;
+  border:1px solid var(--line);
+  background: rgba(255,255,255,.02);
+  white-space: nowrap;
+}
+.more-link:hover{
+  color: var(--text);
+  border-color: rgba(255,255,255,.22);
+  background: rgba(255,255,255,.05);
+}
+
+/* ===== Grid gallery (for “more works” pages) ===== */
+.grid{
+  display:grid;
+  grid-template-columns: 1fr;
+  gap:12px;
+}
+
+.grid .tile{
+  width:100%;
+  max-width:none;
+}
+
+@media (min-width: 680px){
+  .grid{ grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 980px){
+  .grid{ grid-template-columns: repeat(3, 1fr); }
+}
