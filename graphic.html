@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>平面設計｜更多作品</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="nav">
+      <div class="container nav-inner">
+        <a class="brand" href="index.html">
+          <span>大酥兄・作品集</span>
+        </a>
+        <nav class="nav-links" aria-label="頁面導覽">
+          <a href="video.html">影片剪輯</a>
+          <a href="graphic.html">平面設計</a>
+          <a href="ui.html">UI/網頁設計</a>
+          <a href="resume.html">我的簡歷</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <div class="hero-card">
+          <h1 class="h1">平面設計</h1>
+        </div>
+      </section>
+
+      <section class="anchor">
+        <div class="card">
+          <!-- 分類 -->
+          <div class="filters" aria-label="作品分類篩選">
+            <button class="filter is-active" type="button" data-filter="all">
+              全部
+            </button>
+            <button class="filter" type="button" data-filter="packaging">
+              包裝設計
+            </button>
+            <button class="filter" type="button" data-filter="banner">
+              Banner
+            </button>
+            <button class="filter" type="button" data-filter="social">
+              社群素材
+            </button>
+            <button class="filter" type="button" data-filter="dm">
+              DM・傳單
+            </button>
+            <button class="filter" type="button" data-filter="logo">
+              Logo・CIS
+            </button>
+            <button class="filter" type="button" data-filter="illustration">
+              漫畫・插畫
+            </button>
+          </div>
+
+          <!-- 小計數（更直覺知道有沒有篩到） -->
+          <p class="lead" style="margin: 0 0 12px">
+            目前顯示：<span id="count">0</span> 件
+          </p>
+
+          <!-- 作品列表 -->
+          <div class="grid" aria-label="平面設計作品列表">
+            <button
+              class="tile"
+              type="button"
+              data-full="assets/img/g1.jpg"
+              data-cat="logo"
+              aria-label="作品 1 放大"
+            >
+              <div class="thumb">
+                <img
+                  src="assets/img/b_g1.jpg"
+                  alt="給通勤族的飆股報告書CIS設計"
+                />
+              </div>
+              <div class="cap">
+                <span class="tag">給通勤族的飆股報告書 CIS設計</span>
+              </div>
+            </button>
+
+            <button
+              class="tile"
+              type="button"
+              data-full="assets/img/g2.jpg"
+              data-cat="dm"
+              aria-label="作品 2 放大"
+            >
+              <div class="thumb">
+                <img
+                  src="assets/img/b_g2.jpg"
+                  alt="給通勤族的飆股報告書 紙本教材封面"
+                />
+              </div>
+              <div class="cap">
+                <span class="tag">給通勤族的飆股報告書 紙本教材封面</span>
+              </div>
+            </button>
+
+            <button
+              class="tile"
+              type="button"
+              data-full="assets/img/g3.jpg"
+              data-cat="social"
+              aria-label="作品 3 放大"
+            >
+              <div class="thumb">
+                <img src="assets/img/b_g3.jpg" alt="賽博購官方line@素材" />
+              </div>
+              <div class="cap">
+                <span class="tag">賽博購官方line@素材</span>
+              </div>
+            </button>
+
+            <button
+              class="tile"
+              type="button"
+              data-full="assets/img/g4.jpg"
+              data-cat="social"
+              aria-label="作品 4 放大"
+            >
+              <div class="thumb">
+                <img src="assets/img/b_g4.jpg" alt="518官方line@素材" />
+              </div>
+              <div class="cap"><span class="tag">518官方line@素材</span></div>
+            </button>
+
+            <button
+              class="tile"
+              type="button"
+              data-full="assets/img/g5.jpg"
+              data-cat="dm"
+              aria-label="作品 5 放大"
+            >
+              <div class="thumb">
+                <img src="assets/img/b_g5.jpg" alt="立天時代光觸媒DM" />
+              </div>
+              <div class="cap"><span class="tag">立天時代光觸媒DM</span></div>
+            </button>
+
+            <button
+              class="tile"
+              type="button"
+              data-full="assets/img/g6.jpg"
+              data-cat="dm"
+              aria-label="作品 6 放大"
+            >
+              <div class="thumb">
+                <img src="assets/img/b_g6.jpg" alt="任意門數位手術導板DM" />
+              </div>
+              <div class="cap">
+                <span class="tag">任意門數位手術導板DM</span>
+              </div>
+            </button>
+
+            <button
+              class="tile"
+              type="button"
+              data-full="assets/img/g7.jpg"
+              data-cat="illustration"
+              aria-label="作品 7 放大"
+            >
+              <div class="thumb">
+                <img
+                  src="assets/img/b_g7.jpg"
+                  alt="給通勤族的飆股報告書 四格漫畫"
+                />
+              </div>
+              <div class="cap">
+                <span class="tag">給通勤族的飆股報告書 四格漫畫</span>
+              </div>
+            </button>
+
+            <button
+              class="tile"
+              type="button"
+              data-full="assets/img/g8.jpg"
+              data-cat="banner"
+              aria-label="作品 8 放大"
+            >
+              <div class="thumb">
+                <img
+                  src="assets/img/b_g8.jpg"
+                  alt="給通勤族的飆股報告書 banner素材"
+                />
+              </div>
+              <div class="cap">
+                <span class="tag">給通勤族的飆股報告書 banner素材</span>
+              </div>
+            </button>
+
+            <button
+              class="tile"
+              type="button"
+              data-full="assets/img/g9.jpg"
+              data-cat="banner"
+              aria-label="作品 9 放大"
+            >
+              <div class="thumb">
+                <img
+                  src="assets/img/b_g9.jpg"
+                  alt="Bioyona 碧優娜 雙12banner素材"
+                />
+              </div>
+              <div class="cap">
+                <span class="tag">Bioyona 碧優娜 雙12banner素材</span>
+              </div>
+            </button>
+
+            <button
+              class="tile"
+              type="button"
+              data-full="assets/img/g10.jpg"
+              data-cat="social"
+              aria-label="作品 10 放大"
+            >
+              <div class="thumb">
+                <img src="assets/img/b_g10.jpg" alt="覓肌乎 line@素材" />
+              </div>
+              <div class="cap"><span class="tag">覓肌乎 line@素材</span></div>
+            </button>
+
+            <button
+              class="tile"
+              type="button"
+              data-full="assets/img/g11.jpg"
+              data-cat="graphic"
+              aria-label="作品 11 放大"
+            >
+              <div class="thumb">
+                <img
+                  src="assets/img/b_g11.jpg"
+                  alt="新竹芎林 詠旺富亭建商廣告"
+                />
+              </div>
+              <div class="cap">
+                <span class="tag">新竹芎林 詠旺富亭建商廣告</span>
+              </div>
+            </button>
+
+            <button
+              class="tile"
+              type="button"
+              data-full="assets/img/g12.jpg"
+              data-cat="dm"
+              aria-label="作品 12 放大"
+            >
+              <div class="thumb">
+                <img src="assets/img/b_g12.jpg" alt="APU手搖飲DM" />
+              </div>
+              <div class="cap">
+                <span class="tag">APU手搖飲DM</span>
+              </div>
+            </button>
+
+            <button
+              class="tile"
+              type="button"
+              data-full="assets/img/g13.jpg"
+              data-cat="banner"
+              aria-label="作品 13 放大"
+            >
+              <div class="thumb">
+                <img src="assets/img/b_g13.jpg" alt="OPENRICE 美食活動banner" />
+              </div>
+              <div class="cap">
+                <span class="tag">OPENRICE 美食活動banner</span>
+              </div>
+            </button>
+
+            <button
+              class="tile"
+              type="button"
+              data-full="assets/img/g14.jpg"
+              data-cat="social banner"
+              aria-label="作品 14 放大"
+            >
+              <div class="thumb">
+                <img
+                  src="assets/img/b_g14.jpg"
+                  alt="給通勤族的飆股報告書 節日素材"
+                />
+              </div>
+              <div class="cap">
+                <span class="tag">給通勤族的飆股報告書 節日素材</span>
+              </div>
+            </button>
+
+            <button
+              class="tile"
+              type="button"
+              data-full="assets/img/g15_1.jpg"
+              data-cat="packaging"
+              aria-label="作品 15_1 放大"
+            >
+              <div class="thumb">
+                <img
+                  src="assets/img/b_g15_1.jpg"
+                  alt="採購晶理人 益生菌外觀包裝"
+                />
+              </div>
+              <div class="cap">
+                <span class="tag">採購晶理人 益生菌外觀包裝</span>
+              </div>
+            </button>
+
+            <button
+              class="tile"
+              type="button"
+              data-full="assets/img/g15_2.jpg"
+              data-cat="packaging"
+              aria-label="作品 15_2 放大"
+            >
+              <div class="thumb">
+                <img
+                  src="assets/img/b_g15_2.jpg"
+                  alt="採購晶理人 苦瓜胜肽外觀包裝"
+                />
+              </div>
+              <div class="cap">
+                <span class="tag">採購晶理人 苦瓜胜肽外觀包裝</span>
+              </div>
+            </button>
+
+            <button
+              class="tile"
+              type="button"
+              data-full="assets/img/g15_3.jpg"
+              data-cat="packaging"
+              aria-label="作品 15_3 放大"
+            >
+              <div class="thumb">
+                <img
+                  src="assets/img/b_g15_3.jpg"
+                  alt="採購晶理人 葉黃素外觀包裝"
+                />
+              </div>
+              <div class="cap">
+                <span class="tag">採購晶理人 葉黃素外觀包裝</span>
+              </div>
+            </button>
+
+            <button
+              class="tile"
+              type="button"
+              data-full="assets/img/g15_4.jpg"
+              data-cat="packaging"
+              aria-label="作品 15_4 放大"
+            >
+              <div class="thumb">
+                <img
+                  src="assets/img/b_g15_4.jpg"
+                  alt="採購晶理人 黑瑪卡外觀包裝"
+                />
+              </div>
+              <div class="cap">
+                <span class="tag">採購晶理人 黑瑪卡外觀包裝</span>
+              </div>
+            </button>
+
+            <button
+              class="tile"
+              type="button"
+              data-full="assets/img/g16.jpg"
+              data-cat="logo"
+              aria-label="作品 16 放大"
+            >
+              <div class="thumb">
+                <img src="assets/img/b_g16.jpg" alt="翔恩水電 LOGO/製服設計" />
+              </div>
+              <div class="cap">
+                <span class="tag">翔恩水電 LOGO/製服設計</span>
+              </div>
+            </button>
+
+            <button
+              class="tile"
+              type="button"
+              data-full="assets/img/g17.jpg"
+              data-cat="logo"
+              aria-label="作品 17 放大"
+            >
+              <div class="thumb">
+                <img src="assets/img/b_g17.jpg" alt="富寓企管 LOGO改版" />
+              </div>
+              <div class="cap"><span class="tag">富寓企管 LOGO改版</span></div>
+            </button>
+
+            <button
+              class="tile"
+              type="button"
+              data-full="assets/img/g18.jpg"
+              data-cat="illustration"
+              aria-label="作品 18 放大"
+            >
+              <div class="thumb">
+                <img src="assets/img/b_g18.jpg" alt="米樂烘培坊 壁貼設計" />
+              </div>
+              <div class="cap">
+                <span class="tag">米樂烘培坊 壁貼設計</span>
+              </div>
+            </button>
+
+            <button
+              class="tile"
+              type="button"
+              data-full="assets/img/g19.jpg"
+              data-cat="graphic"
+              aria-label="作品 19 放大"
+            >
+              <div class="thumb">
+                <img src="assets/img/b_g19.jpg" alt="天母扶青團22屆交接典禮" />
+              </div>
+              <div class="cap">
+                <span class="tag">天母扶青團22屆交接典禮</span>
+              </div>
+            </button>
+
+            <button
+              class="tile"
+              type="button"
+              data-full="assets/img/g20.jpg"
+              data-cat="logo"
+              aria-label="作品 20 放大"
+            >
+              <div class="thumb">
+                <img src="assets/img/b_g20.jpg" alt="PIGRENT吉屋豬租 logo" />
+              </div>
+              <div class="cap">
+                <span class="tag">PIGRENT吉屋豬租 logo</span>
+              </div>
+            </button>
+
+            <button
+              class="tile"
+              type="button"
+              data-full="assets/img/g23.jpg"
+              data-cat="logo"
+              aria-label="作品 23 放大"
+            >
+              <div class="thumb">
+                <img src="assets/img/b_g23.jpg" alt="潤世資產管理 logo+名片" />
+              </div>
+              <div class="cap">
+                <span class="tag">潤世資產管理 logo+名片</span>
+              </div>
+            </button>
+
+            <button
+              class="tile"
+              type="button"
+              data-full="assets/img/g26.jpg"
+              data-cat="dm"
+              aria-label="作品 26 放大"
+            >
+              <div class="thumb">
+                <img src="assets/img/b_g26.jpg" alt="開心早餐坊 燈箱菜單" />
+              </div>
+              <div class="cap">
+                <span class="tag">開心早餐坊 燈箱菜單</span>
+              </div>
+            </button>
+
+            <button
+              class="tile"
+              type="button"
+              data-full="assets/img/g27.jpg"
+              data-cat="logo"
+              aria-label="作品 27 放大"
+            >
+              <div class="thumb">
+                <img src="assets/img/b_g27.jpg" alt="採購晶理人 logo/名片" />
+              </div>
+              <div class="cap">
+                <span class="tag">採購晶理人 logo</span>
+              </div>
+            </button>
+
+            <button
+              class="tile"
+              type="button"
+              data-full="assets/img/g30.jpg"
+              data-cat="logo"
+              aria-label="作品 30 放大"
+            >
+              <div class="thumb">
+                <img src="assets/img/b_g30.jpg" alt="晶銀寶鋪 logo" />
+              </div>
+              <div class="cap">
+                <span class="tag">晶銀寶鋪 logo</span>
+              </div>
+            </button>
+
+            <button
+              class="tile"
+              type="button"
+              data-full="assets/img/g31.jpg"
+              data-cat="logo"
+              aria-label="作品 31 放大"
+            >
+              <div class="thumb">
+                <img src="assets/img/b_g31.jpg" alt="手機救星 logo/招牌" />
+              </div>
+              <div class="cap">
+                <span class="tag">手機救星 logo+招牌</span>
+              </div>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <footer>© <span id="year"></span> 大酥兄・作品集</footer>
+    </main>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <div
+        class="lightbox-inner"
+        role="dialog"
+        aria-modal="true"
+        aria-label="圖片放大檢視"
+      >
+        <button class="lightbox-close" id="lightboxClose" aria-label="關閉">
+          ✕
+        </button>
+        <img class="lightbox-img" id="lightboxImg" alt="放大圖片" />
+      </div>
+    </div>
+
+    <script>
+      // Footer year
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // ===== Category filter =====
+      const filterBtns = document.querySelectorAll(".filter");
+      const tiles = Array.from(document.querySelectorAll(".grid .tile"));
+      const countEl = document.getElementById("count");
+
+      function setActive(btn) {
+        filterBtns.forEach((b) => b.classList.remove("is-active"));
+        btn.classList.add("is-active");
+      }
+
+      function applyFilter(key) {
+        let visible = 0;
+
+        tiles.forEach((tile) => {
+          const cat = (tile.getAttribute("data-cat") || "").trim();
+          const list = cat ? cat.split(/\s+/) : [];
+          const show = key === "all" || list.includes(key);
+          tile.hidden = !show;
+          if (show) visible++;
+        });
+
+        if (countEl) countEl.textContent = String(visible);
+      }
+
+      // init
+      applyFilter("all");
+
+      filterBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const key = btn.getAttribute("data-filter");
+          setActive(btn);
+          applyFilter(key);
+        });
+      });
+
+      // ===== Lightbox =====
+      const lightbox = document.getElementById("lightbox");
+      const lightboxImg = document.getElementById("lightboxImg");
+      const closeBtn = document.getElementById("lightboxClose");
+
+      function openLightbox(src, alt) {
+        lightboxImg.src = src;
+        lightboxImg.alt = alt || "放大圖片";
+        lightbox.classList.add("open");
+        lightbox.setAttribute("aria-hidden", "false");
+        document.body.style.overflow = "hidden";
+        closeBtn.focus();
+      }
+
+      function closeLightbox() {
+        lightbox.classList.remove("open");
+        lightbox.setAttribute("aria-hidden", "true");
+        lightboxImg.src = "";
+        document.body.style.overflow = "";
+      }
+
+      document.querySelectorAll("button.tile[data-full]").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const src = btn.getAttribute("data-full");
+          const img = btn.querySelector("img");
+          const alt = img ? img.alt : "放大圖片";
+          openLightbox(src, alt);
+        });
+      });
+
+      closeBtn.addEventListener("click", closeLightbox);
+      lightbox.addEventListener("click", (e) => {
+        if (e.target === lightbox) closeLightbox();
+      });
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && lightbox.classList.contains("open"))
+          closeLightbox();
+      });
+    </script>
+  </body>
+</html>
